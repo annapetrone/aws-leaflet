@@ -1,7 +1,7 @@
 # aws-leaflet
 + this project uses an amazon web services relational database (postgres with the postgis extension) to power a [leaflet](http://leafletjs.com/) visualization 
 + here is the example created by this project [http://ec2-52-207-212-11.compute-1.amazonaws.com/](http://ec2-52-207-212-11.compute-1.amazonaws.com/)
-+ You can also connect to the database yourself! It contains the ride history since the start of the system in September 2010. Log in using either [pgAdminIII](http://www.pgadmin.org) or the [psycopg2](http://initd.org/psycopg/docs/) python library. Click [here](http://ec2-52-207-212-11.compute-1.amazonaws.com/credentials.txt) to get the login credentials. 
++ you can also connect to the database yourself! it contains the ride history since the start of the system in september 2010. log in using either [pgAdminIII](http://www.pgadmin.org) or the [psycopg2](http://initd.org/psycopg/docs/) python library. click [here](http://ec2-52-207-212-11.compute-1.amazonaws.com/credentials.txt) to get the login credentials. 
 
 ## how to use this repo
 + below will document how to set up the database and website front end using aws. 
@@ -45,7 +45,7 @@ and [here](http://stackoverflow.com/questions/11618898/pg-config-executable-not-
 
 # setting up an aws ubuntu instance as a web server
 + go back to aws main menu and choose to launch an EC2 instance. 
-+ *choose Ubuntu!*. if you choose amazon linux, you're gonna have a bad time :-(
++ **choose Ubuntu!** if you choose amazon linux, you're gonna have a bad time :-(
 + choose all the free options. note- you can increase the storage up to 30GB for free. 
 + make the security group accept SSH from your IP address, and HTTP from any IP address (so that the world can see your website, but only you can SSH to the server)
 + follow the steps to create a private key (.pem file). then use puttygen to convert to putty format (.ppk file). 
