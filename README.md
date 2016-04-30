@@ -1,7 +1,7 @@
 # aws-leaflet
 + this project uses an amazon web services relational database (postgres with the postgis extension) to power a [leaflet](http://leafletjs.com/) visualization 
 + here is the example created by this project [http://ec2-52-207-212-11.compute-1.amazonaws.com/](http://ec2-52-207-212-11.compute-1.amazonaws.com/)
-
++ You can also connec to the database yourself! Log in using either [pgAdminIII](http://www.pgadmin.org) or the [psycopg2](http://initd.org/psycopg/docs/) python library. Click [here](http://ec2-52-207-212-11.compute-1.amazonaws.com/credentials.txt) to get the login credentials. 
 
 ## how to use this repo
 + below will document how to set up the database and website front end using aws. 
