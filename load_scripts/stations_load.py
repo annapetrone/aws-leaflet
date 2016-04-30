@@ -24,7 +24,7 @@ conn.commit()
 
 f = open(datadir + 'bikeStations.csv', 'r')
 header = f.readline()
-cur.copy_from(f,"stations",sep=",",columns=('station_id','station_name','terminal_id','lon','lat'))
+cur.copy_from(f,"stations",sep=",",columns=('station_id','station_name','terminal_id','lat','lon'))
 conn.commit()
 
 print("Loaded")
