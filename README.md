@@ -1,6 +1,6 @@
 # aws-leaflet
 + this project uses an amazon web services relational database (postgres with the postgis extension) to power a [leaflet](http://leafletjs.com/) visualization 
-+ here is the example created by this project [ec2-54-173-188-49.compute-1.amazonaws.com](http://ec2-54-173-188-49.compute-1.amazonaws.com)
++ here is the example created by this project [http://ec2-52-207-212-11.compute-1.amazonaws.com/](http://ec2-52-207-212-11.compute-1.amazonaws.com/)
 
 
 ## how to use this repo
