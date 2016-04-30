@@ -89,7 +89,7 @@ while t <= end_date:
 		f = open(file_path + file_name+'.csv','r')
 		header = f.readline().strip('\n').split(',') 
 		
-		print(header)
+		print(header) 
 		has_columns = [  [a[0] for a in alternate_names if h.lower() in a[1]][0] for h in header ]
 		print(has_columns)
 		cur.copy_from(f,'rides_etl',columns=has_columns,sep=',')
@@ -108,14 +108,14 @@ while t <= end_date:
 		update_sql = open(sqldir+'rides_etl_time_period_update.sql','r').read().split(';')
 		[cur.execute(sql) for sql in update_sql if len(sql)>5]
 		conn.commit()
-
+		"""
 		# update duration field when not provided 
 		if 'duration_str' in has_columns:
 			print('updating duration field')
 			update_sql = open(sqldir+'rides_etl_duration_update.sql','r').read().split(';')
 			[cur.execute(sql) for sql in update_sql if len(sql)>5]
 			conn.commit()
-		"""		
+				
 
 		# look up terminal id's of start and end station 
 		if 'start_terminal_id' not in has_columns:
