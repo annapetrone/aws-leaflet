@@ -6,7 +6,7 @@
 ## how to use this repo
 + below will document how to set up the database and website front end using aws. 
 + the python scripts to load data are found in [load_scripts](https://github.com/ampetr/aws-leaflet/tree/master/load_scripts). 
-+ to repeat this example yourself, the data files used are included in the [data](https://github.com/ampetr/aws-leaflet/tree/master/data) directory. the sql statements to create and update tables are located in tbe [sql_scripts](https://github.com/ampetr/aws-leaflet/tree/sql_scripts/) directory.
++ to repeat this example yourself, the data files used are included in the [data](https://github.com/ampetr/aws-leaflet/tree/master/data) directory. the sql statements to create and update tables are located in tbe [sql_scripts](https://github.com/ampetr/aws-leaflet/tree/master/sql_scripts) directory.
 + website files are located in the [html](https://github.com/ampetr/aws-leaflet/tree/master/html) directory. 
 
 # setting up an aws postgres database
